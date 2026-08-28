@@ -1,0 +1,530 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FFE5D4;
+    color:#000;
+    transition:.4s;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    background:#FFD1BA !important;
+}
+
+.navbar-brand,
+.nav-link,
+.navbar label{
+    color:#000 !important;
+    font-weight:600;
+}
+
+#themeSelector{
+    border-radius:10px;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card{
+    background:#fff;
+    border:none;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+}
+
+.card-header{
+    background:#FFC9B5 !important;
+    color:#000 !important;
+    border-radius:18px 18px 0 0 !important;
+    font-weight:bold;
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+h2,h3,h4,h5{
+    color:#000;
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+.form-control,
+.form-select{
+
+    border:2px solid #FFC9B5;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#FF8A65;
+
+    box-shadow:0 0 10px rgba(255,138,101,.4);
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn{
+
+    border-radius:12px;
+    transition:.3s;
+    font-weight:600;
+
+}
+
+.btn-primary{
+
+    background:#FF8A65;
+    border:none;
+}
+
+.btn-primary:hover{
+
+    background:#FF7043;
+    transform:scale(1.05);
+
+}
+
+.btn-secondary{
+
+    background:#BDBDBD;
+    border:none;
+
+}
+
+.btn-secondary:hover{
+
+    background:#9E9E9E;
+    transform:scale(1.05);
+
+}
+
+.btn-success:hover{
+
+    transform:scale(1.05);
+
+}
+
+.btn-danger:hover{
+
+    transform:scale(1.05);
+
+}
+
+.btn-info:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================
+   ERROR MESSAGE
+========================== */
+
+#error{
+
+    color:red;
+    font-size:14px;
+    margin-top:15px;
+    font-weight:600;
+
+}
+
+/* ==========================
+   SUCCESS MESSAGE
+========================== */
+
+#successMessage{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    width:280px;
+
+    background:#28a745;
+
+    color:white;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    animation:fadeIn .5s;
+
+    z-index:9999;
+
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateX(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+table{
+
+    background:white;
+
+}
+
+.table thead{
+
+    background:#FFC9B5;
+
+}
+
+.table-hover tbody tr:hover{
+
+    background:#FFF2EB;
+
+    transition:.3s;
+
+}
+
+.table tbody tr:nth-child(even){
+
+    background:#FFF9F6;
+
+}
+
+.table{
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+/* ==========================
+   PROFILE IMAGE
+========================== */
+
+#previewImage{
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #FFC9B5;
+
+    margin-top:15px;
+
+}
+
+/* Profile inside table */
+
+.student-img{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid #FFB199;
+
+}
+
+/* ==========================
+   PASSWORD STRENGTH
+========================== */
+
+.progress{
+
+    height:18px;
+
+    border-radius:20px;
+
+}
+
+.progress-bar{
+
+    transition:.4s;
+
+}
+
+.weak{
+
+    background:red;
+
+}
+
+.medium{
+
+    background:orange;
+
+}
+
+.strong{
+
+    background:green;
+
+}
+
+/* ==========================
+   SEARCH BOX
+========================== */
+
+#searchStudent{
+
+    border-radius:12px;
+
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+.dark-mode{
+
+    background:#1C1C1C;
+
+    color:white;
+
+}
+
+.dark-mode .card{
+
+    background:#2E2E2E;
+
+    color:white;
+
+}
+
+.dark-mode .card-header{
+
+    background:#444 !important;
+
+    color:white !important;
+
+}
+
+.dark-mode .navbar{
+
+    background:#333 !important;
+
+}
+
+.dark-mode .navbar-brand,
+
+.dark-mode .nav-link,
+
+.dark-mode label,
+
+.dark-mode h2,
+
+.dark-mode h3,
+
+.dark-mode h4,
+
+.dark-mode h5{
+
+    color:white !important;
+
+}
+
+.dark-mode .form-control,
+
+.dark-mode .form-select{
+
+    background:#555;
+
+    color:white;
+
+    border:1px solid #777;
+
+}
+
+.dark-mode .form-control::placeholder{
+
+    color:#ddd;
+
+}
+
+.dark-mode table{
+
+    background:#2E2E2E;
+
+    color:white;
+
+}
+
+.dark-mode .table{
+
+    color:white;
+
+}
+
+.dark-mode .table tbody tr:nth-child(even){
+
+    background:#3B3B3B;
+
+}
+
+.dark-mode .table-hover tbody tr:hover{
+
+    background:#555;
+
+}
+
+/* ==========================
+   MODAL
+========================== */
+
+.modal-content{
+
+    border-radius:18px;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+/* Laptop */
+
+@media(max-width:1200px){
+
+.card{
+
+margin-bottom:20px;
+
+}
+
+}
+
+/* Tablet */
+
+@media(max-width:768px){
+
+.navbar-brand{
+
+font-size:20px;
+
+}
+
+.card{
+
+padding:10px;
+
+}
+
+.btn{
+
+margin-bottom:10px;
+
+width:100%;
+
+}
+
+#previewImage{
+
+width:120px;
+
+height:120px;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:576px){
+
+h2{
+
+font-size:24px;
+
+}
+
+h4{
+
+font-size:20px;
+
+}
+
+.table{
+
+font-size:13px;
+
+}
+
+#previewImage{
+
+width:100px;
+
+height:100px;
+
+}
+
+#successMessage{
+
+width:220px;
+
+font-size:14px;
+
+right:10px;
+
+top:10px;
+
+}
+
+}
